@@ -39,11 +39,11 @@ function App() {
           <div className="city-info">
             <div className="row cityInfo">
               <span id="cityName">{data.name}</span>
-              <span id="temp">{data.main.temp}</span>
+              <span id="temp">{data.main.temp}°C</span>
             </div>
             <div className="row">
               <span id="status">{data.weather[0].description}</span>
-              <span id="media">{data.name}</span>
+              <span id="media">Min {data.main.temp_min}° / Máx {data.main.temp_max}°</span>
             </div>
           </div>
         )}
